@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Faça seu Cadastro</h1>
+    <p>Preencha os campos abaixo</p>
+
+    <form method="post">
+
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Informe sua senha">
+        </div>
+
+      
+        <div>
+            <input type="submit" >
+        </div>
+        
+
+    </form>
+
+
+    
+</body>
+</html>
