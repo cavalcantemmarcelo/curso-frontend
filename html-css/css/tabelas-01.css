@@ -1,0 +1,64 @@
+
+body {
+    background-image: url(../imagens/too2.webp);
+    margin: 10px auto;
+    width: 90%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#primeiro {
+    padding: 10px;
+    background-color: #F5F5F5;
+    font-size: large;
+    font-weight: bold;
+}
+
+#titulo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+table, td, th, tfoot {
+    border: solid 1px #000;
+    padding: 5px;
+}
+.syntaxhighlighter {
+    width: 99% !important;
+    margin: 1em 0 1em 0 !important;
+    padding: 1px !important;
+    position: relative !important;
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+footer {
+    font-size: small;
+}
+div {
+    background: rgb(219 219 213 / 84%)
+}

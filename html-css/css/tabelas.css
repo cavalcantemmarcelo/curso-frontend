@@ -2,60 +2,73 @@
 
 table {
 
-	border: 1px solid;
+	border: 1px solid #535353;
 	background: #ffffff;
 	width: 100%;
-	border-collapse: collapse;
-
+	border-collapse: separate;
 }
 
 table tr {
-	border: 1px solid #757575;
+	border: 1px solid #535353;
 }
 
-table tbody tr:nth-child(even) {
-	background-color: #EEEEFF;
+table tbody tr:nth-child(odd) {
+	background-color: #d6d6d6;
 }
 
 table tbody tr:hover {
-	background-color: rgba(0, 0, 255, .2);
+	background-color: rgba(0, 0, 255, 0.2);
 }
 
 table th,
 table td {
 	padding: 1rem;
 	font-size: 1.6rem;
-	text-align: right;
-	/*border: 1px solid #757575;*/
+	text-align: center;
 	vertical-align: middle;
 }
 
 table tr td:first-child {
-	text-align: left;
+	text-align: center;
 	font-weight: bold;
 }
 
-table th {
-	background-color: #234589;
-	color: #FFFFFF;
+thead th {
+	width: 3px;
+	background-color: #1e3888;
+	color: #ffffff;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 }
 
 .table-container {
 	padding: 2rem 1rem;
 }
 
+.table-container h1,
 .table-container h3 {
-	font-size: 1.8rem;
-	font-style: normal;
-	margin-bottom: 1rem;
+	color: #1e3888;
+}
+
+.table-container h1 {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 4.2rem;
+}
+
+.table-container h3 {
+	text-align: center;
+	font-size: x-small;
+	font-family: sans-serif;
+	margin-bottom: 9.5rem;
 }
 
 .table-container tfoot {
-	background: #EEEEEE;
+	background-color: #eeeeee;
 }
-
 .table-container tfoot td {
 	font-weight: bold;
 }

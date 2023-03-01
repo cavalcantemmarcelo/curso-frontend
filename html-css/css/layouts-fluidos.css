@@ -8,10 +8,9 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-body {  
+body {
     height: 100vh;
-    background-color: #efefef;
+    background-color: cadetblue;
     overflow: overlay;
 }
 
@@ -26,19 +25,17 @@ div {
 
 .width-100 {
     width: 100%;
-    width: 100vw; /* viewport width */
+    width: 100vw; /*viewport width */
     background-color: aqua;
-    
-    padding: 20px 0;
+    padding: 20% 0;
     height: 400px;
 }
 
 nav {
-    background-color: grey;
+    background-color: gray;
     width: 20%;
     float: left;
     display: table;
-    display: block;
     height: 100%;
 }
 
@@ -47,8 +44,7 @@ article {
     width: 80%;
     float: left;
     height: 100%;
-    box-sizing: border-box; /* considera o padding e border na largura e altura */
-    
+    box-sizing: border-box;
 }
 
 .fixed-width {
@@ -60,11 +56,10 @@ article {
 
 .background {
     background-color: lightcoral;
-    background-image: url(../images/pattern.png);
-    background-repeat: repeat-y; /* vertical */ 
-    background-repeat: repeat-x; /* horizontal */ 
+    background-image: url(../imagens/lo.png);
+    background-repeat: repeat-x; /*horizontal*/
     width: 100%;
-    height: 50vh;
+    height: 19vh;
 }
 
 div img {

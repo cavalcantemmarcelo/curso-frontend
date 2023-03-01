@@ -1,66 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>HTML - Tabelas</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
+<meta charset="utf-8" />
+<title>HTML5 - Tabelas</title>
+<style>
+table, td, th, tfoot {border:solid 1px #000; padding:5px;}
+th {background-color:#999;}
+caption {font-size:x-large;}
+colgroup {background:#F60;}
+.coluna1 {background:#F66;}
+.coluna2  {background:#F33;}
+.coluna3  {background:#F99;}
+</style>
+<link type="text/css" rel="stylesheet" href="./Css/tabelas-01.css">
+<body>
+<div>
+<div class="titulo">	
+<h1>HTML5 - Tabelas</h1>
+</div>
 
-		<h1>Tabelas</h1>
-
-		<table border="1" width="100%">
-			<thead>
-				<tr>
-					<th>Coluna 1</th>
-					<th>Coluna 2</th>
-					<th>Coluna 3</th>
-				</tr>
-			</thead>
-			<tbody>	
-				<tr align="center">
-					<td>1A</td>
-					<td>1B</td>
-					<td>1C</td>
-				</tr>
-				<tr align="right">
-					<td>2A</td>
-					<td>2B</td>
-					<td>2C</td>
-				</tr>
-				<tr>
-					<td>3A</td>
-					<td colspan="2">3BC</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="3">Rodapé da tabela</td>
-				</tr>
-			</tfoot>
-		</table>
-
-
-		<h2>Tabela como layout</h2>
-
-		<table width="600">
-			<tr height="90">
-				<td colspan="4" bgcolor="#BBCCEE" align="center"> Cabeçalho</td>
-			</tr>
-			<tr height="300">
-				<td width="20" bgcolor="#0000FF"></td>
-				<td width="60%" bgcolor="#DDDDDD">
-					<h2>Título</h2>
-					<p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
-
-				</td>
-				<td bgcolor="#EEEEEE">Coluna 2</td>
-				<td width="20"bgcolor="#0000FF"></td>
-			</tr>
-			<tr>
-				<td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
-			</tr>
-		</table>
-
-	</body>
+<h3>Tabela Simples</h3>
+<table>
+<tr>
+<td>Trompete</td>
+<td>Trombone</td>
+</tr>
+<tr>
+<td>Trompa</td>
+<td>Tuba</td>
+</tr>
+</table>
+<pre class="brush:html">
+&lt;table>
+&lt;tr>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trombone&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trompa&lt;/td>
+&lt;td>Tuba&lt;/td>
+&lt;/tr>
+&lt;/table>
+</pre>
+<hr />
+<h3>Tabela com células de título</h3>
+<table>
+<tr>
+<th>Agudo</th>
+<th>Grave</th>
+</tr>
+<tr>
+<td>Trompete</td>
+<td>Trombone</td>
+</tr>
+</table>
+<pre class="brush:html">
+&lt;table>
+&lt;tr>
+&lt;th>Agudo&lt;/th>
+&lt;th>Grave&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trombone&lt;/td>
+&lt;/tr>
+&lt;/table>
+</pre>
+<h3>Cabeçalho, corpo e rodapé da tabela</h3>
+<table>
+<thead>
+<tr><th colspan="4">Tabela de preços</th></tr>
+</thead>
+<tfoot>
+<tr><td colspan="4">Visite nossa loja</td></tr>
+</tfoot>
+<tbody>
+<tr>
+<td rowspan="2"> Seminovos</td>
+<td>Trompete</td>
+<td>Trombone</td>
+<td>Trompa</td>
+</tr>
+<tr>
+<td>$500</td>
+<td>$640</td>
+<td>$650</td>
+</tr>
+</tbody>
+</table>
+<pre class="brush:html">
+&lt;table>
+&lt;thead>
+&lt;tr>&lt;th colspan="4">Tabela de preços&lt;/th>&lt;/tr>
+&lt;/thead>
+&lt;tfoot>
+&lt;tr>&lt;td colspan="4">Visite nossa loja&lt;/td>&lt;/tr>
+&lt;/tfoot>
+&lt;tbody>
+&lt;tr>
+&lt;td rowspan="2"> Seminovos&lt;/td>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trombone&lt;/td>
+&lt;td>Trompa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$500&lt;/td>
+&lt;td>$640&lt;/td>
+&lt;td>$650&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+</pre>
+<h3>Grupo de colunas 1</h3>
+<table>
+<colgroup span="3"></colgroup>
+<tr>
+<th>Agudo</th>
+<th >Médio</th>
+<th>Grave</th>
+</tr>
+<tr>
+<td>Trompete</td>
+<td>Trompa</td>
+<td>Trombone </td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>Fa</td>
+<td>C</td>
+</tr>
+</table>
+<pre class="brush:html">
+&lt;table>
+&lt;colgroup span="3">&lt;/colgroup>
+&lt;tr>
+&lt;th>Agudo&lt;/th>
+&lt;th >Médio&lt;/th>
+&lt;th>Grave&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trompa&lt;/td>
+&lt;td>Trombone &lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bb&lt;/td>
+&lt;td>Fa&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;/table>
+</pre>
+<h3>Grupo de colunas 2</h3>
+<table>
+<colgroup>
+<col  class="coluna1"/>
+<col class="coluna2"/>
+<col class="coluna3"/>
+</colgroup>
+<tr>
+<th>Agudo</th>
+<th >Médio</th>
+<th >Grave</th>
+</tr>
+<tr>
+<td>Trompete</td>
+<td>Trompa</td>
+<td>Trombone</td>
+</tr>
+</table> 
+<pre class="brush:html">
+&lt;table>
+&lt;colgroup>
+&lt;col  class="coluna1"/>
+&lt;col class="coluna2"/>
+&lt;col class="coluna3"/>
+&lt;/colgroup>
+&lt;tr>
+&lt;th>Agudo&lt;/th>
+&lt;th >Médio&lt;/th>
+&lt;th >Grave&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trompa&lt;/td>
+&lt;td>Trombone&lt;/td>
+&lt;/tr>
+&lt;/table> 
+</pre>
+<h3>Cabeçalho com sumário e título</h3>
+<p>O elemento <code>summary</code>, existente nas versões anteriores do HTML, ainda não tem seu lugar garantido dentro do HTML 5 e o mais provável é que ele seja considerado obsoleto na versão final da nova especificação: <a href="http://www.w3.org/TR/html5/tabular-data.html#attr-table-summary" title="tabular data" target="_blank">http://www.w3.org/TR/html5/tabular-data.html#attr-table-summary</a></p>
+<table summary="A nossa loja, Metal & Cia,  oferece uma grande variedade de instrumentos semi-novos em ótimo estado de conservação">
+<caption>Catálogo da Metal & Cia</caption>
+<thead>
+<tr><th colspan="4">Tabela de preços</th></tr>
+</thead>
+<tfoot>
+<tr><td colspan="4">Visite nossa loja</td></tr>
+</tfoot>
+<tbody>
+<tr>
+<td rowspan="2"> Seminovos</td>
+<td>Trompete</td>
+<td>Trombone</td>
+<td>Trompa</td>
+</tr>
+<tr>
+<td>$500</td>
+<td>$640</td>
+<td>$650</td>
+</tr>
+</tbody>
+</table>
+<pre class="brush:html">
+&lt;table summary="A nossa loja, Metal & Cia,  oferece uma grande variedade de instrumentos semi-novos em ótimo estado de conservação">
+&lt;caption>Catálogo da Metal & Cia&lt;/caption>
+&lt;thead>
+&lt;tr>&lt;th colspan="4">Tabela de preços&lt;/th>&lt;/tr>
+&lt;/thead>
+&lt;tfoot>
+&lt;tr>&lt;td colspan="4">Visite nossa loja&lt;/td>&lt;/tr>
+&lt;/tfoot>
+&lt;tbody>
+&lt;tr>
+&lt;td rowspan="2"> Seminovos&lt;/td>
+&lt;td>Trompete&lt;/td>
+&lt;td>Trombone&lt;/td>
+&lt;td>Trompa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$500&lt;/td>
+&lt;td>$640&lt;/td>
+&lt;td>$650&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+</pre>
+<hr />
+<h3>Estilo aplicado</h3>
+<pre class="brush:css">
+&lt;style>
+table, td, th, tfoot {border:solid 1px #000; padding:5px;}
+th {background-color:#999;}
+caption {font-size:x-large;}
+colgroup {background:#F60;}
+.coluna1 {background:#F66;}
+.coluna2  {background:#F33;}
+.coluna3  {background:#F99;}
+&lt;/style>
+</pre>
+<hr />
+<footer>Exemplos do livro <cite><a href="/html5/">HTML5 - Embarque Imediato</a></cite> de <a href="/">Fábio Flatschart</a> publicado pela <a href="http://www.brasport.com.br/" target="_blank">Editora Brasport</a></footer></body></div>
 </html>

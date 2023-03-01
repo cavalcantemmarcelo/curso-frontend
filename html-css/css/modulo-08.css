@@ -6,7 +6,7 @@
 
 	Herança
 
-	1. Sobreposição / Sobrescreve
+	1. Sobreposição / Sobrescreve 
 	2. Aplica a último estilo definido
 	3. Prioriza estilo específicas (com seletores mais próximos)
 	4. Se aplica a todas as propriedades
@@ -33,9 +33,9 @@ header p {
 
 	Combinadores 
 	
-	(espaço) seletor descendente 
-	(>) combinador de seletores filhos
-	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(espaço) seletor descendente (Todos dentro do elemento, exemplo todos do h2) 
+	(>) combinador de seletores filhos (vao se pra selecionar algum elemento em especifico dento do h2 por ex)
+	(+) combinador de elementos irmãos adjacentes / que vem logo depois
 	(~) combinador de elementos irmãos geral / após elemento de referência
 
 	
@@ -52,8 +52,8 @@ header > h2 {
 }
 
 h2 + p {
-	background: #FF0;
-	color: #333;
+	background: #f5e663;
+	color: rgb(27, 63, 92);
 }
 
 h2 ~ h5 {
@@ -77,7 +77,7 @@ a {
 }
 
 a:visited {
-	color: #f00;
+	color: rgb(211, 35, 35);
 }
 
 a:active {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 h2:hover {
-	color: #888;
+	color: rgb(42, 119, 182);
 }
 
 
@@ -108,6 +108,7 @@ h1, h2, h3 {
 }
 
 p {
+	color: #47a8bd;
 	font-weight: normal;
 	font-size: 1.4rem;
 }
@@ -125,7 +126,8 @@ li {
 
 h3 {
 	/* declaração resumida / completa */
-	font: italic bold 1.2rem/2 sans-serif;
+	color: #1e3888;
+	font: italic bold 2.5rem/2 sans-serif;
 }
 
 
@@ -136,11 +138,11 @@ h3 {
 */
 
 body {
-	background: url('../images/pattern.png') center top repeat #EEEEEE;
+	background: url(../imagens/too2.webp) center top repeat #EEEEEE;
 }
 
 section {
-	background: rgba(255, 255, 255, 0.95);
+	background: rgb(219 219 213 / 84%)
 }
 
 p {
@@ -150,11 +152,11 @@ p {
 
 header,
 footer {
-	background-color: #034589;
+	background-color: #2e3a5f;
 }
 
 footer p {
-	color: rgb(255, 255, 255);
+	color: #47a8bd;
 }
 
 .navegacao {
@@ -169,5 +171,5 @@ footer p {
 
 .navegacao li a:hover {
 	background-color: rgba(150, 150, 200, .5);
-	color: #333333;
+	color: #63c9d7;
 }

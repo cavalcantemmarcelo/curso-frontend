@@ -1,21 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
 		<title>HTML - Layouts</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
+			
+			@import url(./Css/tabelas-01.css);
+
 			* {
 			  box-sizing: border-box;
+			}
+
+			div {
+				background: rgb(219 219 213 / 84%)
+			}
+
+			#imagem-layout {
+				width: auto;
+				height: auto;
+				right: -0;
 			}
 
 			body {
 			  font-family: Arial, Helvetica, sans-serif;
 			}
 
+			header,
+			footer {
+				background-color: #2e3a5f;
+			}
+
 			/* Style the header */
 			header {
-			  background-color: #666;
 			  padding: 30px;
 			  text-align: center;
 			  font-size: 35px;
@@ -25,9 +42,6 @@
 			/* Create two columns/boxes that floats next to each other */
 			nav {
 			  float: left;
-			  width: 30%;
-			   
-			  background: #ccc;
 			  padding: 20px;
 			}
 
@@ -35,13 +49,13 @@
 			nav ul {
 			  list-style-type: none;
 			  padding: 0;
+			  
 			}
 
 			article {
 			  float: left;
 			  padding: 20px;
 			  width: 70%;
-			  background-color: #f1f1f1;
 			}
 
 			/* Clear floats after the columns */
@@ -54,7 +68,6 @@
 
 			/* Style the footer */
 			footer {
-			  background-color: #777;
 			  padding: 10px;
 			  text-align: center;
 			  color: white;
@@ -67,48 +80,43 @@
 			    height: auto;
 			  }
 			}
-			</style>
+		</style>
 	</head>
 	<body>
 
+		<div>
 		<header>
-			<h2>Curso Front-end - HTML</h2>
+			<h2>Curso Front - end - HTML</h2>
 		</header>
 
 		<section>
-
+			
 			<nav>
-				<h3>Aulas</h3>
-				<ul class="navegacao">
-					<li><a href="01-introducao.html">Introdução</a></li>
-					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
-					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
-					<li><a href="04-tabelas.html">Tabelas</a></li>
-					<li><a href="05-layouts.html">Layouts</a></li>
-					<li><a href="06-formularios.html">Formulários</a></li>
-					<li><a href="07-fundamentos-css.html">Fundamentos do CSS</a></li>
-					<li><a href="08-layouts-fluidos.html">Layouts Fluidos</a></li>
-					<li><a href="09-elementos-graficos.html">Elementos Gráficos</a></li>
-					<li><a href="10-layouts-web.html">Layouts Web</a></li>
+				<ul>
+					<li><a href="mmmodulo-08.html">Home</a></li>
+					<li><a href="#Sobre">Sobre</a></li>
+					<li><a href="Contato">Contato</a></li>
+					<li><a href="./06-formularios.html"></a></li>
 				</ul>
+					<div class="imagem-layout">
+						<img src="./imagens/layout-01.jpg" alt="">
+					</div>
 			</nav>
 
 			<article>
-
-				<h1>Título Artigo</h1>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh posuere, eleifend lacus quis, blandit mauris. Proin eu gravida justo. Donec a mi laoreet, malesuada est a, imperdiet leo. Fusce in mauris dapibus, cursus purus vitae, pulvinar ligula. Donec nec mi mollis, viverra purus et, faucibus ante. Fusce faucibus pretium eros, vitae condimentum orci dapibus eu. Morbi elit nibh, pulvinar ut laoreet sit amet, dignissim id lectus. Nunc ac felis posuere, interdum eros vitae, sodales eros. Aenean porta vehicula diam, sit amet venenatis ante eleifend in. Integer malesuada urna nunc, dapibus dapibus felis malesuada et. Ut id tempor dolor, ac imperdiet lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus quam, mollis in tellus quis, blandit venenatis nunc.</p>
-
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit amet ullamcorper odio. Etiam dignissim arcu vel porta dictum. Proin vel maximus justo, quis rutrum lectus. Nullam pellentesque id enim quis imperdiet. Aenean condimentum ultricies ex vitae auctor. Proin condimentum congue felis, nec aliquet erat tempus ut. Phasellus quis molestie nulla, tincidunt finibus tortor. Aliquam nulla erat, tristique at pharetra eget, vestibulum a diam. Maecenas aliquet porta elit et pretium. In sed ante nibh. Nulla facilisi. Curabitur finibus gravida lacus, eu vestibulum ex. Morbi nec suscipit felis.</p>
 				
+				<h1>Titulo Artigo</h1>
+
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh posuere, eleifend lacus quis, blandit mauris. Proin eu gravida justo. Donec a mi laoreet, malesuada est a, imperdiet leo. Fusce in mauris dapibus, cursus purus vitae, pulvinar ligula. Donec nec mi mollis, viverra purus et, faucibus ante. Fusce faucibus pretium eros, vitae condimentum orci dapibus eu. Morbi elit nibh, pulvinar ut laoreet sit amet, dignissim id lectus. Nunc ac felis posuere, interdum eros vitae, sodales eros. Aenean porta vehicula diam, sit amet venenatis ante eleifend in. Integer malesuada urna nunc, dapibus dapibus felis malesuada et. Ut id tempor dolor, ac imperdiet lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus quam, mollis in tellus quis, blandit venenatis nunc.</p>
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit amet ullamcorper odio. Etiam dignissim arcu vel porta dictum. Proin vel maximus justo, quis rutrum lectus. Nullam pellentesque id enim quis imperdiet. Aenean condimentum ultricies ex vitae auctor. Proin condimentum congue felis, nec aliquet erat tempus ut. Phasellus quis molestie nulla, tincidunt finibus tortor. Aliquam nulla erat, tristique at pharetra eget, vestibulum a diam. Maecenas aliquet porta elit et pretium. In sed ante nibh. Nulla facilisi. Curabitur finibus gravida lacus, eu vestibulum ex. Morbi nec suscipit felis.</p>
+
 			</article>
-
-
 		</section>
 
-		<footer>
-			<p>Desenvolvido por Marcelo</p>
+		<footer class="navegacao">
+			<p>Desenvolvido por Ygor Silva</p>
 		</footer>
-		
 	</body>
+		</div>
+	</html>
 </html>
