@@ -1,7 +1,7 @@
-# Curso Front-end
+# Curso Front-end 💻
 #### EBAC
 
-# GIT
+# GIT 🦊
 ## Conceitos de versionamento
  - Histórico
  - Controle de versão
@@ -14,7 +14,7 @@
  Arquivo A  | Versão 1 | Versão 2
  Arquivo B  | Versão 1 | Versão 2
 
- ## Instalação do Git
+ ## Instalação do Git ⚙
 https://git-scm.com/
 
 - Windows: https://git-scm.com/download/win
@@ -34,10 +34,10 @@ https://git-scm.com/
  > git push (enviar alterações para o repositório GitHub)
  > git pull (puxar / trazer alterações do GitHub para sua máquina)
 
-## GitFlow
+## GitFlow ⚙
 Fluxo do Git
 
-### Branchs
+### Branchs 📂
 são ramificações / versões paralelas
 
 - main / master (vai para produção, quando o projeto é publicado)
