@@ -11,6 +11,8 @@ body {
     display: block;
     width: 100vw;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -59,6 +61,37 @@ h4 {
 p {
     margin-bottom: 10px;
     line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #efefef;
+    width: 100%;
+}
+
+#tenho-interesse form,
+html .cog-cognito * html .cog-cognito *::before,
+html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *,
+:root:root:root:root:root .cog-cognito *::before,
+:root:root:root:root:root .cog-cognito *::after {
+
+    background-color: #efefef !important;
+}
+
+#tenho-interesse html .cog-cognito--styled .cog-header h1,
+:root:root:root:root:root .cog-cognito--styled .cog-header h1 {
+
+    color: #385874;
+}
+
+#tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
+#tenho-interesse .cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
+    color: #385874;
+
 }
 
 ol {
@@ -127,4 +160,9 @@ footer p {
 footer small {
     font-size: 80%;
     display: block;
+}
+
+.cognito {
+    height: 380px !important;
+    overflow: hidden !important;
 }
