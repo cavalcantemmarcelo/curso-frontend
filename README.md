@@ -45,7 +45,7 @@ são ramificações / versões paralelas
 - DOD Definition of Done: critérios de aceite
 - versionamento 1.0.20
 
- (projeto todo concluido p/ enviar p master),(<-----atualização mto import no cod),(<---correção de bugs)
+ (projeto todo concluido p/ enviar p master),(atualização mto import no cod),(correção de bugs)
 
 > git checkout -b dev (cria uma branch)
 > git checkout master (mudar de branch)
